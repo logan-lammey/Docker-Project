@@ -2,21 +2,6 @@
 
 Complete step-by-step guide for deploying the Vaultwarden password manager stack.
 
----
-
-## Prerequisites Checklist
-
-Before starting, ensure you have:
-
-- [ ] Ubuntu 22.04/24.04 LTS (or similar Linux)
-- [ ] Docker 20.10+ installed
-- [ ] Docker Compose v2.0+ installed
-- [ ] 2GB RAM available
-- [ ] 10GB disk space
-- [ ] Ports 80 and 443 free
-- [ ] Root or sudo access
-
----
 
 ## Installation Steps
 
