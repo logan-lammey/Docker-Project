@@ -24,9 +24,9 @@ docker compose version
 
 ```bash
 cd ~
-git clone https://github.com/YOUR_USERNAME/vaultwarden-docker.git
-cd vaultwarden-docker
-ls -la
+wget https://github.com/logan-lammey/Docker-Project-VaultWarden/releases/download/Files/vaultwarden-docker.zip
+mkdir -p ~/Docker-Project-SYS265 && cd ~/Docker-Project-SYS265
+unzip ~/vaultwarden-docker.zip
 ```
 
 ### 3. Configure Environment
@@ -124,11 +124,6 @@ docker compose restart vaultwarden
 ### Browser Extensions
 1. Install Bitwarden extension
 2. Settings → Server URL: `http://localhost`
-3. Login with credentials
-
-### Mobile Apps
-1. Download Bitwarden app
-2. Settings → Self-hosted → Server URL
 3. Login with credentials
 
 ---
