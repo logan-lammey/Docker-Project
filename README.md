@@ -6,9 +6,8 @@ A complete self-hosted password manager solution using Docker Compose with multi
 - **Nginx** - Reverse proxy and web server
 - **Automated Backups** - Daily backup service
 
-## 📋 Table of Contents
+## Table of Contents
 - [Architecture](#architecture)
-- [Prerequisites](#prerequisites)
 - [Quick Start](#quick-start)
 - [Detailed Setup Instructions](#detailed-setup-instructions)
 - [Configuration](#configuration)
@@ -18,7 +17,7 @@ A complete self-hosted password manager solution using Docker Compose with multi
 - [Troubleshooting](#troubleshooting)
 - [Security Considerations](#security-considerations)
 
-## 🏗️ Architecture
+## Architecture
 
 ```
 ┌─────────────────────────────────────────┐
@@ -55,29 +54,7 @@ A complete self-hosted password manager solution using Docker Compose with multi
 └─────────────────────────────────────────┘
 ```
 
-## ✅ Prerequisites
-
-- **Docker**: Version 20.10 or higher
-- **Docker Compose**: Version 2.0 or higher
-- **System Requirements**: 
-  - 2GB RAM minimum
-  - 10GB disk space
-  - Linux, macOS, or Windows with WSL2
-
-### Verify Prerequisites
-
-```bash
-# Check Docker version
-docker --version
-
-# Check Docker Compose version
-docker compose version
-
-# Verify Docker is running
-docker ps
-```
-
-## 🚀 Quick Start
+## Quick Start
 
 ### 1. Clone the Repository
 
@@ -129,7 +106,7 @@ Open your browser and navigate to:
 http://localhost
 ```
 
-## 📖 Detailed Setup Instructions
+## Detailed Setup Instructions
 
 ### Step 1: Initial Setup
 
@@ -248,7 +225,7 @@ For HTTPS support (recommended for production):
    docker compose restart vaultwarden
    ```
 
-## ⚙️ Configuration
+## Configuration
 
 ### Environment Variables
 
@@ -284,7 +261,7 @@ After changes:
 docker compose restart nginx
 ```
 
-## 🌐 Accessing the Application
+## Accessing the Application
 
 ### Web Interface
 - **URL**: http://localhost (or your configured domain)
@@ -301,17 +278,7 @@ Configure the extension:
 2. Server URL: `http://localhost` (or your domain)
 3. Login with your credentials
 
-### Mobile Apps
-Download Bitwarden app:
-- [iOS App Store](https://apps.apple.com/app/bitwarden-password-manager/id1137397744)
-- [Android Play Store](https://play.google.com/store/apps/details?id=com.x8bit.bitwarden)
-
-Configure in app:
-1. Settings → Self-hosted
-2. Server URL: Your server address
-3. Login with credentials
-
-## 🔐 Admin Panel
+## Admin Panel
 
 Access the admin panel to manage users and settings.
 
@@ -345,7 +312,7 @@ nano .env
 docker compose restart vaultwarden
 ```
 
-## 💾 Backup and Restore
+## Backup and Restore
 
 ### Automatic Backups
 
@@ -484,7 +451,7 @@ rm -rf backups/*
 docker compose up -d
 ```
 
-## 🔒 Security Considerations
+## Security Considerations
 
 ### Essential Security Steps
 
@@ -543,7 +510,7 @@ For production use:
 6. **Regular security audits**
 7. **Implement monitoring and alerts**
 
-## 📝 Maintenance
+## Maintenance
 
 ### Update Containers
 
@@ -584,31 +551,3 @@ docker volume prune
 docker system prune
 ```
 
-## 📚 Additional Resources
-
-- [Vaultwarden Wiki](https://github.com/dani-garcia/vaultwarden/wiki)
-- [Bitwarden Help Center](https://bitwarden.com/help/)
-- [Docker Documentation](https://docs.docker.com/)
-- [PostgreSQL Documentation](https://www.postgresql.org/docs/)
-- [Nginx Documentation](https://nginx.org/en/docs/)
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Test thoroughly
-5. Submit a pull request
-
-## 📄 License
-
-This project is open source and available under the MIT License.
-
-## 🆘 Support
-
-- **Issues**: [GitHub Issues](https://github.com/YOUR_USERNAME/vaultwarden-docker/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/YOUR_USERNAME/vaultwarden-docker/discussions)
-
----
-
-**Built with ❤️ using Docker, Vaultwarden, PostgreSQL, and Nginx**
