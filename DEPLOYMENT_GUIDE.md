@@ -96,7 +96,7 @@ docker run hello-world
 
 ```bash
 # Option 1: Clone from GitHub
-git clone <your-github-repo-url>
+wget https://github.com/logan-lammey/Docker-Project/releases/download/Files/prometheus-monitoring-stack.zip
 cd prometheus-monitoring-stack
 
 # Option 2: Download and extract zip
